@@ -5,7 +5,7 @@ import time
 
 class ErrorBot(Player):
     def __init__(self):
-        self._error_probability = np.random.uniform(low=0.0, high=.01)
+        self._error_probability = np.random.uniform(low=0.0, high=.005)
         print("Error Probability: {0}".format(self._error_probability))
 
     def __possibly_error_out(self):
